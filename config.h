@@ -20,7 +20,7 @@ static const char *colors[][3]      = {
 
 /* tagging */
 static const char *tags[] = { "HOME", "TERM", "WWW", "MACS", "DIR", "DOC", "GAME", "MSG", "PASS" };
-static const char *defaulttagapps[] = { NULL, "st", "firefox", "emacs", "thunar", "libreoffice", NULL, "signal-desktop", "keepassxc" };
+static const char *defaulttagapps[] = { NULL, "alacritty", "firefox", "emacs", "thunar", "libreoffice", NULL, "signal-desktop", "keepassxc" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -60,7 +60,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 /* static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL }; */
 static const char *dmenucmd[] = { "rofi", "-show", "drun", NULL };
-static const char *termcmd[]  = { "st", NULL };
+static const char *termcmd[]  = { "alacritty", NULL };
 static const char *emacscmd[] = { "emacsclient", "-c", NULL };
 static const char *laptopcmd[] = { "sh", "/home/elid/Scripts/xlaptop.sh", NULL };
 static const char *desktopcmd[] = { "sh", "/home/elid/Scripts/xdesktop.sh", NULL };
